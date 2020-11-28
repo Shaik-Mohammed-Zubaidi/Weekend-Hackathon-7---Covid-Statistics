@@ -2,8 +2,7 @@ const { connection } = require('./connector')
 const { data } = require('./data')
 
 const refreshAll = async () => {
-    await connection.deleteMany({})
-    // console.log(connection)
-    await connection.insertMany(data)
+    await connection.deleteMany({});
+    await connection.insertMany(data);
 }
-refreshAll()
+refreshAll().then(_=>console.log("Successfully uploaded")).catch((err)=>console.log("error occurred",err));
