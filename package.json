@@ -15,7 +15,7 @@
     "mochawesome": "6.1.1",
     "mongo-round": "^1.0.0",
     "mongodb": "^3.6.3",
-    "mongoose": "^5.10.15",
+    "mongoose": "^5.13.20",
     "node-serialize": "0.0.4"
   },
   "devDependencies": {
